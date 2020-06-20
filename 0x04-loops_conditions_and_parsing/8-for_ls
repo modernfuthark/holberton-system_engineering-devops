@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Display the contense of the current directory
+for i in *; do
+	echo "$i" | cut --delimiter="-" --fields=2
+done
