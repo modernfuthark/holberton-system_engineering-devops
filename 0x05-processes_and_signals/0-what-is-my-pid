@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-echo $$
+# Echos the PID of the process
+echo $BASHPID
