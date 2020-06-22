@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Infinite loop, blocks signal SIGTERM
+trap "echo 'I am invincible!!!'" SIGTERM
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done
