@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Listen to a port using the -l option for the command nc
+# Possibly it might need to use -lkv, but it doesnt seem like it...
+nc -l 98
