@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Installs nginx on a fresh webserver
+apt-get -y update
+apt-get -y install nginx
+echo "Holberton School for the win!" > /var/www/html/index.nginx-debian.html
+sed -i '/^\sserver_name.*/a	\	rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
+service nginx start
