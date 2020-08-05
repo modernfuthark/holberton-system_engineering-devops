@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Installs nginx on a fresh webserver
+# Installs nginx on a fresh webserver, as well as redirect /redirect_me to a youtube url
 apt-get -y update
 apt-get -y install nginx
 echo "Holberton School for the win!" > /var/www/html/index.nginx-debian.html
