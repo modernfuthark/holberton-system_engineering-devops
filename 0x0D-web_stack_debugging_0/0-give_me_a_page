@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 # Restarts apache2
-sudo systemctl start apache2
+# sudo service apache2 start
+# sudo systemctl start apache2
+apache2ctl start
