@@ -6,6 +6,6 @@ sudo apt-get install -y haproxy
 sudo sed -i "/\CONFIG/a\ENABLED=1\n" /etc/default/haproxy
 # i hate sed :)
 # this site helps a lot lol -> https://sed.js.org/
-sudo sed -i "\$a\frontend http_front\n  bind *:80\n  stats uri /haproxy?stats\n  default_backend http_back\n\nbackend http_back\n  balance roundrobin\n  server 1155-web-01 35.227.17.143:80 check\n  server 1155-web-02 35.190.159.240:80 check"
+sudo sed -i "\$a\frontend http_front\n  bind *:80\n  stats uri /haproxy?stats\n  default_backend http_back\n\nbackend http_back\n  balance roundrobin\n  server 1155-web-01 35.227.17.143:80 check\n  server 1155-web-02 35.190.159.240:80 check" /etc/haproxy/haproxy.cfg
 
-sudo service haproxy restart
+sudo service haproxy start
