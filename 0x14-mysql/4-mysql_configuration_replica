@@ -80,9 +80,10 @@ log_error = /var/log/mysql/error.log
 # The following can be used as easy to replay backup logs or for replication.
 # note: if you are setting up a replication slave, see README.Debian about
 #       other settings you may need to change.
+port                    = 3306
 server-id               = 2
-log_bin                 = /var/log/mysql/mysql-bin.log
-relay-log               = /var/log/mysql/mysql-relay-bin.log
+log_bin                 = /var/log/mysql/mysql-bin
+relay-log               = /var/log/mysql/mysql-relay-bin
 expire_logs_days        = 10
 max_binlog_size   = 100M
 binlog_do_db            = tyrell_corp

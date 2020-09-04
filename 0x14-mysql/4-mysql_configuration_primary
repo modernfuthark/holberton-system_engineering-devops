@@ -82,7 +82,8 @@ log_error = /var/log/mysql/error.log
 #       other settings you may need to change.
 port                    = 3306
 server-id               = 1
-log_bin                 = /var/log/mysql/mysql-bin.log
+log_bin                 = /var/log/mysql/mysql-bin
+relay-log               = /var/log/mysql/mysql-relay-bin
 expire_logs_days        = 10
 max_binlog_size   = 100M
 binlog_do_db            = tyrell_corp
