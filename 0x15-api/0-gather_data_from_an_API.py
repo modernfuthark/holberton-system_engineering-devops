@@ -21,8 +21,8 @@ def GetData():
         if i["completed"]:
             todos_done += 1
             results.append(i["title"])
-    print("Employee {} is done with tasks({}/{})"
-          .format(user.get("name"), todos_done, todos_total))
+    print("Employee {} is done with tasks({}/{}):"
+          .format(user["name"], todos_done, todos_total))
     for line in results:
         print("\t {}".format(line))
 
