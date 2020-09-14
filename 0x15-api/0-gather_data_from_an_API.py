@@ -10,9 +10,6 @@ url_user = "https://jsonplaceholder.typicode.com/users/"
 
 def GetData():
     """ Gets the data from a url """
-    if len(argv) < 2:
-        return print("Invalid")
-
     user = get(url_user + argv[1]).json()
     todos = get(url_todos + argv[1]).json()
 
