@@ -16,7 +16,8 @@ def GetData():
 
     tasks = []
     for i in todos:
-        tasks.append({"task": i["title"], "completed": i["completed"], "username": user["name"]})
+        tasks.append({"task": i["title"], "completed": i["completed"],
+                     "username": user["name"]})
 
     with open(str(user["id"]) + ".json", "w+") as f:
         f.write(dumps({"{}".format(user["id"]): tasks}))
