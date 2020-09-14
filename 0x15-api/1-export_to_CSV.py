@@ -14,7 +14,7 @@ def GetData():
     user = get(url_user + argv[1]).json()
     todos = get(url_todos + argv[1]).json()
 
-    with open(str(user["id"]) + ".cvs", "w") as f:
+    with open(str(user["id"]) + ".csv", "w+") as f:
         _writer = writer(f, delimiter=",", quotechar='"', quoting=QUOTE_ALL)
         for i in todos:
             _writer.writerow([user["id"], user["username"],
