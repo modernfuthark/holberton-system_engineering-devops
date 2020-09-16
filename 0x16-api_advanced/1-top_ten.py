@@ -11,3 +11,5 @@ def top_ten(subreddit):
     if req.status_code == 200:  # Subreddit exists
         for i in range(0, 10):
             print(req.json()["data"]["children"][i]["data"]["title"])
+    else:
+        print("None")
